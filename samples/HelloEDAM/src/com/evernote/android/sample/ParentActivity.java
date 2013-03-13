@@ -47,8 +47,8 @@ public class ParentActivity extends Activity {
 
   // Your Evernote API key. See http://dev.evernote.com/documentation/cloud/
   // Please obfuscate your code to help keep these values secret.
-  private static final String CONSUMER_KEY = "You consumer key";
-  private static final String CONSUMER_SECRET = "Your consumer secret";
+  private static final String CONSUMER_KEY = "obata-hiroshi";
+  private static final String CONSUMER_SECRET = "ecd56b92adacae9f";
 
   // Initial development is done on Evernote's testing service, the sandbox.
   // Change to HOST_PRODUCTION to use the Evernote production service
