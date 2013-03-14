@@ -26,6 +26,9 @@
         <activity
             android:name=".SimpleNote"
             android:label="@string/simple_note" />
+        <activity
+            android:name=".SimpleList"
+            android:label="@string/simple_list" />
         <activity android:name=".ParentActivity"
             android:configChanges="orientation|keyboardHidden"/>
     </application>

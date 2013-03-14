@@ -27,4 +27,6 @@
     <string name="error_listing_notebooks">Error listing notebooks</string>
     <string name="error_creating_notestore">Error creating notestore</string>
     <string name="error_saving_note">Error saving note</string>
+    <string name="esdk__simple_list">SimpleList</string>
+    <string name="simple_list">SimpleList</string>
 </resources>
