@@ -10,12 +10,15 @@ import android.os.Bundle;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.support.v4.app.NavUtils;
 import android.annotation.TargetApi;
+import android.content.Intent;
 
 import android.os.Build;
 
@@ -33,7 +36,8 @@ public class NoteBookList extends ParentActivity {
 		mListView = (ListView) findViewById(R.id.notebook_listview);
 		mAdapter = new NotebookListAdapter(this);
 		mListView.setAdapter(mAdapter);
-
+		mListView.setOnItemClickListener(mItemClickListener);
+		
 		initList();
 	}
 
@@ -98,4 +102,19 @@ public class NoteBookList extends ParentActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
+	  private AdapterView.OnItemClickListener mItemClickListener = new AdapterView.OnItemClickListener() {
+
+		@Override
+		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+			// TODO Auto-generated method stub
+			Notebook book = mAdapter.getItem(position);
+			if (book != null){
+				Intent intent = new Intent(getApplicationContext(), NoteList.class);
+				intent.putExtra(getResources().getString(R.string.notebook_guid),book.getGuid());
+				startActivity(intent);				
+			}
+		}
+		  
+	  };
+	
 }

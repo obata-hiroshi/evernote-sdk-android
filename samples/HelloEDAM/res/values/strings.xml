@@ -35,5 +35,6 @@
     <string name="title_activity_note_book_list">NoteBookList</string>
     <string name="title_activity_note_list_view">NoteListView</string>
     <string name="esdk__notebook_list">NoteBook List</string>
+    <string name="notebook_guid">notebook_guid</string>
 
 </resources>
