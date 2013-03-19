@@ -52,7 +52,7 @@ public class HelloEDAM extends ParentActivity {
   private Button mLoginButton;
   private Button mLogoutButton;
   private ListView mListView;
-  private ArrayAdapter mAdapter;
+  private ArrayAdapter<String> mAdapter;
 
   //Listener to act on clicks
   private AdapterView.OnItemClickListener mItemClickListener = new AdapterView.OnItemClickListener() {
@@ -65,7 +65,7 @@ public class HelloEDAM extends ParentActivity {
         case 1:
           startActivity(new Intent(getApplicationContext(), SimpleNote.class));
         case 2:
-          startActivity(new Intent(getApplicationContext(), SimpleList.class));
+          startActivity(new Intent(getApplicationContext(), NoteBookList.class));
           break;
       }
     }
